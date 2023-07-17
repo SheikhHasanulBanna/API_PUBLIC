@@ -244,7 +244,7 @@
 #### Request Body
 ```json
 {
-  "Visit_fee" : "2000"
+  "Visit_fee" : "1300"
 }
 ```
 
@@ -290,7 +290,7 @@
 #### Response Body
 ```json
 {
-  "Message": "temporary clinic created.",
+  "Message": "new time slot added.",
   "online_visit": {
     "Visit_fee": "1300",
     "Contact": "017xxxxxxxx",
@@ -436,7 +436,7 @@
 ### ```PUT``` Edit Schedule of a Specific Clinic
 |API Endpoint | HTTP Method| Response Code | 
 | --- | :---: | :---: |
-| [api/doctor/clinic/:clinicID]() | ```PUT``` | 201 Created |
+| [api/doctor/clinic/:clinicID]() | ```PUT``` | 200 OK |
 ||||
 
 #### Request Body
@@ -462,7 +462,7 @@
 #### Response Body
 ```json
 {
-  "Message": "schedule edited to the clinic",
+  "Message": "schedule edited for the clinic",
   "Clinic": {
     "Clinic_id": 10002,
     "Clinic_name": "Multiverse Hospital",
@@ -667,7 +667,7 @@
 #### Response Body
 ```json
 {
-  "Message": "Previous Records are stored successfully",
+  "Message": "Previous Records are shared successfully",
   "Appointment": {
     "AppointmentId": 23212,
     "doctorID": 2002,
@@ -937,7 +937,7 @@
 #### Response Body
 ```json
 {
-  "Message" : "successfull"
+  "Message" : "successful"
 }
 ```
 
