@@ -671,8 +671,8 @@
   "Appointment": {
     "AppointmentId": 23212,
     "doctorID": 2002,
-    "clinicID": 500 or Null,
-    "Time_slot_id": 234 or Null,
+    "clinicID": 500,
+    "Time_slot_id": null,
     "Date": "17/07/23",
     "Status": "pending",
     "Past_appointments": [],
