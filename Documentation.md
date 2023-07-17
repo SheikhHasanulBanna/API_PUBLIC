@@ -417,8 +417,7 @@
 ||||
 
 #### Request Body
-```json
-Body: 
+```json 
 {
   "assistantID" : 31243
 }
