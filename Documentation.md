@@ -516,7 +516,7 @@
 ---
 
 ## Appointment Services
-### ```GET``` View Appointments of a Clinic
+### ```GET``` View Appointments
 |API Endpoint | HTTP Method| Response Code | 
 | --- | :---: | :---: |
 | [api/appointment?filterByName="strange"&filterBySpecialization=""&filterByStatus="completed"&filterByDate="17/03/2023"]() | ```GET``` | 200 OK |
@@ -539,6 +539,30 @@
   "Online_Appointments" : []
 }
 ```
+
+### ```GET``` View Appointments of a Clinic
+|API Endpoint | HTTP Method| Response Code | 
+| --- | :---: | :---: |
+| [api/appointment/:clinic?filterByName="evan"&filterByStatus="completed"&filterByDate="17/03/2023"]() | ```GET``` | 200 OK |
+||||
+
+#### Request Query
+```json
+{
+  "filterByName": "evan",
+  "filterByStatus": "completed/pending",
+  "filterByDate" : "17/03/2023"
+}
+```
+
+#### Response Body
+```json
+{        
+  "Appointments" : [],
+  "Online_Appointments" : []
+}
+```
+
 
 ### ```DELETE``` Delete an Appointment
 |API Endpoint | HTTP Method| Response Code | 
